@@ -25,9 +25,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 /* Navigation */
@@ -477,6 +477,191 @@ nav a:hover {
     font-size: 0.875rem;
     color: var(--gradient-start);
     text-transform: uppercase;
+}
+
+/* About Page Styles */
+.about-hero {
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.about-hero .team-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gradient-start);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.2);
+}
+
+.about-hero .team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-hero .team-card h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-hero .team-card .role {
+    color: var(--gradient-start);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.about-hero .team-card .bio {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.hero .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 400px));
+    gap: 2.5rem;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    justify-content: center;
+}
+
+.hero .team-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero .team-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--gradient-start);
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .role {
+    color: var(--gradient-start);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.team-card .bio {
+    color: var(--light-text);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.timeline {
+    padding: 6rem 0;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+}
+
+.timeline-item {
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    width: calc(50% - 30px);
+    margin-left: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 0;
+}
+
+.timeline-date {
+    color: var(--gradient-start);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.timeline-content h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.timeline-image {
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
     letter-spacing: 1px;
 }
 
